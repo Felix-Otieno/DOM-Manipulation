@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Select DOM Elements with the getElementsByClassName() Method</title>
+</head>
+<body>
+    <p class="master2">I love javascript</p>
+    <p class="master2">I love react</p>
+    <h1 class="master2">I want a job</h1>
+
+    <button id="btn">click me</button> 
+    <script>
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener( 'click', function master() {
+                   let master =  document.getElementsByClassName('master2');
+                   master[2].innerHTML = "I need a job";
+                   master[2].style.fontSize = "4rem";
+                   master[0].innerHTML = "I love JavaScript, It is easy but hard to master.";
+                   master[1].innerHTML = "I love React but haven't learn it yet";
+
+                   
+
+        })
+    </script>
+</body>
+</html>

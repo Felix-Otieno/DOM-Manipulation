@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Add Styling with CSS</title>
+    <style>
+        body {
+            background-color: hotpink;
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            background-color: blueviolet;
+            width: 200px;
+            border: none;
+            font-size: 2rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="master">Click me</button>
+    <script>
+        const buttonEl = document.getElementById('master');
+        buttonEl.addEventListener('click', addFunction);
+
+        function addFunction() {
+            buttonEl.classList.add('button');
+        }
+    </script>
+</body>
+
+</html>

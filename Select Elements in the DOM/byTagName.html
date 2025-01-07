@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Select DOM elements with the getElementsByTagName() Method</title>
+</head>
+
+<body>
+    <p>VsCode</p>
+    <p>Atom</p>
+    <p>Sublime text</p>
+    <button id="btn">click me</button>
+    <script>
+
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function master() {
+            let master = document.getElementsByTagName('p');
+
+            let master2 = master[1].innerHTML = 'Code Editors';
+            console.log(master2);
+        })
+
+
+    </script>
+</body>
+
+</html>

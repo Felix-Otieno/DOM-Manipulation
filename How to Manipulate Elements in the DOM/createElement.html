@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent"></div> <!-- Added this element -->
+
+    <script>
+        const createEl = document.createElement('div');
+        console.log(createEl); // <div></div>
+
+        createEl.innerHTML = 'I am a frontend developer';
+        console.log(createEl); // <div>I am a frontend developer</div>
+
+        const parentEl = document.getElementById('parent');
+
+        parentEl.appendChild(createEl); // Append the new element to the parent element
+
+        console.log(parentEl);
+    </script>
+</body>
+
+</html>
